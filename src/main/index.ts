@@ -13,6 +13,7 @@ function createWindow(): void {
     center: true,
     title: 'NoteMark',
     frame: false,
+    backgroundMaterial: 'acrylic',
     vibrancy: 'under-window',
     visualEffectState: 'active',
     titleBarStyle: 'hidden',
@@ -20,7 +21,7 @@ function createWindow(): void {
     webPreferences: {
       sandbox: true,
       contextIsolation: true,
-      preload: join(__dirname, '../preload/index.js'),
+      preload: join(__dirname, '../preload/index.ts')
     }
   })
 
